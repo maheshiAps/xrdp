@@ -1,0 +1,24 @@
+How to Install Apache JMeter on Ubuntu 20.04
+
+Step 1 - Create Atlantic.Net Cloud Server
+apt-get update -y
+
+Step 2 - Install Java
+apt-get install openjdk-8-jdk -y
+java -version
+Step 3 - Install Apache Web Server
+
+apt-get install apache2 -y
+systemctl start apache2
+systemctl enable apache2
+
+Step 4 - Install Apache JMeter
+wget https://downloads.apache.org//jmeter/binaries/apache-jmeter-5.5.zip
+
+unzip unzip apache-jmeter-5.5.zip
+
+
+Step 5 - Launch the Apache JMeter Application
+cd /home/maheshi/apache-jmeter-5.5/bin
+
+./jmeter.sh
